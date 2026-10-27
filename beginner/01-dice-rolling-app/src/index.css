@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-henny: "Henny Penny", system-ui;
+}
+
+@layer base {
+  *,
+  *::after,
+  *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-mono);
+    font-weight: 400;
+    font-style: normal;
+  }
+}
